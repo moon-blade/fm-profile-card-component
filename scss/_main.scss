@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.main-section {
+  position: relative;
+  background-color: $darkCyan;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .card {
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    .card-header {
+      img {
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid $darkGray;
+
+      .body-image-container {
+        img {
+          border: 5px solid #fff;
+          border-radius: 50%;
+          margin-top: -53px;
+        }
+      }
+
+      .body-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        .name-age {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .name {
+            font-size: 1.8rem;
+          }
+
+          .age {
+            font-weight: 400;
+            margin-left: 5px;
+            font-size: 1.6rem;
+          }
+        }
+        .location {
+          padding: 10px;
+          font-weight: 400;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+
+      #followers-div {
+        #followers-num {
+          font-size: 1.8rem;
+          margin-bottom: 5px;
+        }
+        #followers {
+          font-weight: 400;
+          font-size: 1.4rem;
+        }
+      }
+      #likes-div {
+        #likes-num {
+          font-size: 1.8rem;
+          margin-bottom: 5px;
+        }
+        #likes {
+          font-weight: 400;
+          font-size: 1.4rem;
+        }
+      }
+      #photos-div {
+        #photos-num {
+          font-size: 1.8rem;
+          margin-bottom: 5px;
+        }
+        #photos {
+          font-weight: 400;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
