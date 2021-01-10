@@ -12,6 +12,9 @@ html {
 }
 
 .main-section {
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: -300px -500px, 700px 400px;
   position: relative;
   background-color: #19a2ae;
   width: 100vw;
@@ -25,23 +28,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
-}
-
-.main-section .circles #circle1 {
-  position: absolute;
-  top: -330px;
-  left: -330px;
-}
-
-.main-section .circles #circle2 {
-  position: absolute;
-  bottom: -390px;
-  right: -390px;
 }
 
 .main-section .card {
-  z-index: 10;
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
@@ -161,5 +150,18 @@ html {
 .main-section .card .card-footer #photos-div #photos {
   font-weight: 400;
   font-size: 1.4rem;
+}
+
+footer {
+  height: 4.6875rem;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */

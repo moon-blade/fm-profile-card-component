@@ -9,7 +9,12 @@ html {
   font-size: 10px;
   font-family: "Kumbh Sans", sans-serif;
 }
+
 .main-section {
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: -300px -500px, 700px 400px;
   position: relative;
   background-color: $darkCyan;
   width: 100vw;
@@ -17,10 +22,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 
   .card {
-    z-index: 10;
     background-color: #fff;
     border-radius: 20px;
     overflow: hidden;
@@ -113,5 +116,18 @@ html {
         }
       }
     }
+  }
+}
+
+footer {
+  height: 4.6875rem;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
   }
 }
